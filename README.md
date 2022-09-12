@@ -1,2 +1,1 @@
 # renpass
-A password manager. 
