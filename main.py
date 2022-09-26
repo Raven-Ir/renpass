@@ -1,6 +1,7 @@
 import tkinter as tk
 from PIL import Image, ImageTk
 from tkinter.filedialog import askopenfile
+from passwords import generated_password
 
 root = tk.Tk()
 
@@ -31,9 +32,12 @@ saved_pswrd_btn = tk.Button(root, textvariable=saved_pswrd_text, font="Consolas"
 saved_pswrd_text.set("saved passwords")
 saved_pswrd_btn.grid(column=5, row=8)
 
+password = generated_password()
 
-
-
+#Text box
+text = tk.Text(root, height= 2, width=20)
+text.grid(columnspan=18, row=9)
+text.insert(tk.END, password)
 
 
 root.mainloop()
