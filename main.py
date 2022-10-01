@@ -13,7 +13,7 @@ canvas = tk.Canvas(root, width = 800, height = 600, bg = "#242424", bd=0, highli
 canvas.grid(columnspan=20, rowspan=20)
 
 #logo
-logo = Image.open("./assets/renpass_logo.png")
+logo = Image.open("./assets/pswrd_logo.png")
 logo = logo.resize((200,100), Image.Resampling.LANCZOS)
 logo = ImageTk.PhotoImage(logo)
 logo_label = tk.Label(image=logo, borderwidth=0, highlightthickness=0)
