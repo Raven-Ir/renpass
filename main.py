@@ -1,6 +1,6 @@
 import tkinter as tk
 from PIL import Image, ImageTk
-from passwords import generated_password
+from passwords import generated_password, save_password, show_password
 
 root = tk.Tk()
 
